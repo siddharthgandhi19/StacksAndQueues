@@ -10,7 +10,7 @@ namespace StacksAndQueues
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine(" 1. Push\n 2. Peak\n 3. Pop ");
+                Console.WriteLine(" 1. Push\n 2. Peak\n 3. Pop\n 4. Queue ");
                 Console.WriteLine("Enter above mention option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 Stacks stack = new Stacks();
@@ -39,6 +39,13 @@ namespace StacksAndQueues
                         stack.Display();
                         break;
                     case 4:
+                        Queues queue = new Queues();
+                        queue.Enqueue(56);
+                        queue.Enqueue(30);
+                        queue.Enqueue(70);
+                        queue.Display();
+                        break;
+                    case 5:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
